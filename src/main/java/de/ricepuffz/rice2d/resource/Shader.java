@@ -112,7 +112,8 @@ public class Shader
 		BufferedReader br = null;
 		
 		try {
-			br = new BufferedReader(new FileReader(new File("./assets/shaders/" + filepath)));
+			//br = new BufferedReader(new FileReader(new File("./assets/shaders/" + filepath))); old non-maven version
+			br = new BufferedReader(new FileReader(new File("./src/main/resources/assets/shaders/" + filepath)));
 			String line = null;
 			
 			while ((line = br.readLine()) != null)

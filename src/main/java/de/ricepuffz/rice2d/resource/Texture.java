@@ -21,7 +21,8 @@ public class Texture
 	public Texture(String path, boolean systemTexture)
 	{
 		if (!systemTexture)
-			loadTexture("./assets/textures/" + path);
+			//loadTexture("./assets/textures/" + path); old non-maven version
+			loadTexture("./src/main/resources/assets/textures/" + path);
 		else {
 			ImageData data = ImageLoader.loadImageNoStbi(this.getClass().getClassLoader().getResourceAsStream("assets/textures/" + path));
 			loadTexture(data);
