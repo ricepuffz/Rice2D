@@ -1,0 +1,1 @@
+mvn deploy:deploy-file -Durl=file:repo/ -Dfile=target/rice2d-0.1.jar -DgroupId=de.ricepuffz.rice2d -DartifactId=rice2d -Dpackaging=jar -Dversion=0.1
